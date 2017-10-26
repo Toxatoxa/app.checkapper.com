@@ -30,20 +30,20 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-//        $schedule->command('create:checking_tasks')
-//            ->dailyAt('03:00');
-//
-//        $schedule->command('add:new_films')
-//            ->dailyAt('00:00');
-//
-//        $schedule->command('publish:social')
-//            ->dailyAt('23:00');
-//
-//        $schedule->command('check:thumbs')
-//            ->hourly();
-//
-//        $schedule->command('send:semails')
-//            ->dailyAt('23:00');
+        $schedule->command('create:checking_tasks')
+            ->dailyAt('03:00');
+
+        $schedule->command('add:new_films')
+            ->dailyAt('00:00');
+
+        $schedule->command('publish:social')
+            ->dailyAt('23:00');
+
+        $schedule->command('check:thumbs')
+            ->hourly();
+
+        $schedule->command('send:semails')
+            ->dailyAt('23:00');
     }
 
     /**
