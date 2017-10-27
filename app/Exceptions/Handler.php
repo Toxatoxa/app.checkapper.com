@@ -36,8 +36,8 @@ class Handler extends ExceptionHandler
     public function report(Exception $exception)
     {
         if (config('app.env') == 'production') {
-            Mail::to('anton.antonov@sidekick-content.com')
-                ->send(new ExceptionHandlerMail($exception));
+//            Mail::to('anton.antonov@sidekick-content.com')
+//                ->send(new ExceptionHandlerMail($exception));
         }
 
         parent::report($exception);
