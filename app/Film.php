@@ -55,7 +55,7 @@ class Film extends Model
         preg_match('/\/movie\/(.*)\/id/', $this->track_view_url, $matches);
         $movieName = (isset($matches[1])) ? $matches[1] : '';
 
-        return 'https://geo.itunes.apple.com/' . $this->itunes_country . '/movie/' . $movieName . '/id' . $this->track_id . '?mt=6&at=' . config('settings.itunes_affiliate_token') . '&ct=' . $campaign;
+        return 'https://itunes.apple.com/' . $this->itunes_country . '/movie/' . $movieName . '/id' . $this->track_id . '?mt=6&at=' . config('settings.itunes_affiliate_token') . '&ct=' . $campaign;
     }
 
     /**
